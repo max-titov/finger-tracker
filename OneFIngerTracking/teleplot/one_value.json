@@ -1,0 +1,55 @@
+{
+   "widgets": [
+      {
+         "type": "chart",
+         "gridPos": {
+            "h": 10,
+            "w": 8,
+            "x": 0,
+            "y": 0
+         },
+         "series": [
+            {
+               "name": "Rotation",
+               "sourceNames": [
+                  "Rotation"
+               ],
+               "formula": "",
+               "options": {
+                  "_serie": "Rotation",
+                  "stroke": "rgba(231,76,60,1)",
+                  "fill": "rgba(231,76,60,0.1)"
+               },
+               "type": "number"
+            },
+            {
+               "name": "Max_Value",
+               "sourceNames": [
+                  "Max_Value"
+               ],
+               "formula": "",
+               "options": {
+                  "_serie": "Max_Value",
+                  "stroke": "rgba(52,152,219,1)",
+                  "fill": "rgba(52,152,219,0.1)"
+               },
+               "type": "number"
+            },
+            {
+               "name": "Min_Value",
+               "sourceNames": [
+                  "Min_Value"
+               ],
+               "formula": "",
+               "options": {
+                  "_serie": "Min_Value",
+                  "stroke": "rgba(46,204,113,1)",
+                  "fill": "rgba(46,204,113,0.1)"
+               },
+               "type": "number"
+            }
+         ]
+      }
+   ],
+   "viewDuration": 15
+}
