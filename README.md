@@ -2,9 +2,14 @@
 
 Hardware that attaches to the back of your hand and fingertips that tracks 16 degrees of freedom. 
 
+<p float="left">
+  <img src="./media/overview.jpeg" width="300" />
+  <img src="./media/hand_stand.jpeg" width="300" /> 
+</p>
+
 ## Description
 
-The glove uses rotating neodymium magnets and hall effect sensors at each joint to mreasure rotation. The thumb has 4 sensors and the fingers have 3 each. Each sensor is wired up to a multiplexer and powered with a common GND/VCC strip. I used a XIAO ESP32C3 as the microcontroller for its small form factor. This project builds upon Nepyope's glove shown here: [Youtube](https://www.youtube.com/watch?v=iPtgvh6fNdQ).
+The glove uses rotating neodymium magnets and hall effect sensors at each joint to measure rotation. The thumb has 4 sensors and the fingers have 3 each. Each sensor is wired up to a multiplexer and powered with a common GND/VCC strip. I used a XIAO ESP32C3 as the microcontroller for its small form factor. This project builds upon Nepyope's glove shown here: [Youtube](https://www.youtube.com/watch?v=iPtgvh6fNdQ).
 
 ## Getting Started
 
@@ -61,7 +66,7 @@ My Parts:
 
 ### Firmware
 
-The firmware was made using PlatformIO in the Arduino framework. You can comment and uncomment the print funcitons to print raw values, adjusted angle values, or all the values in a single string. The raw value and adjusted angle values print in a way where Teleplot (serial plotter VSCode extension) can read and plot them. A teleplot layout is in the teleplot folder.
+The firmware was made using PlatformIO in the Arduino framework. You can comment and uncomment the print functions to print raw values, adjusted angle values, or all the values in a single string. The raw value and adjusted angle values print in a way where Teleplot (serial plotter VSCode extension) can read and plot them. A teleplot layout is in the teleplot folder.
 
 ## License
 
