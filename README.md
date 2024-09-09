@@ -40,7 +40,7 @@ My Parts:
 * 2mm steel pins
 * M2 bolts and inserts
 * M3 bolts and inserts
-* 3mm by 3mm circular neodymium magnets
+* 3mm by 3mm circular neodymium magnets [Amazon](https://www.amazon.com/dp/B0CCXYF5TR?ref=ppx_yo2ov_dt_b_fed_asin_title)
 
 ### Electrical Hardware
 
