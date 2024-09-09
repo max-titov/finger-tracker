@@ -1,0 +1,268 @@
+{
+   "widgets": [
+      {
+         "type": "chart",
+         "gridPos": {
+            "h": 6,
+            "w": 6,
+            "x": 0,
+            "y": 0
+         },
+         "series": [
+            {
+               "name": "Joint_0",
+               "sourceNames": [
+                  "Joint_0"
+               ],
+               "formula": "",
+               "options": {
+                  "_serie": "Joint_0",
+                  "stroke": "rgba(231,76,60,1)",
+                  "fill": "rgba(231,76,60,0.1)"
+               },
+               "type": "number"
+            },
+            {
+               "name": "Joint_1",
+               "sourceNames": [
+                  "Joint_1"
+               ],
+               "formula": "",
+               "options": {
+                  "_serie": "Joint_1",
+                  "stroke": "rgba(52,152,219,1)",
+                  "fill": "rgba(52,152,219,0.1)"
+               },
+               "type": "number"
+            },
+            {
+               "name": "Joint_2",
+               "sourceNames": [
+                  "Joint_2"
+               ],
+               "formula": "",
+               "options": {
+                  "_serie": "Joint_2",
+                  "stroke": "rgba(46,204,113,1)",
+                  "fill": "rgba(46,204,113,0.1)"
+               },
+               "type": "number"
+            }
+         ]
+      },
+      {
+         "type": "chart",
+         "gridPos": {
+            "h": 6,
+            "w": 6,
+            "x": 0,
+            "y": 0
+         },
+         "series": [
+            {
+               "name": "Joint_3",
+               "sourceNames": [
+                  "Joint_3"
+               ],
+               "formula": "",
+               "options": {
+                  "_serie": "Joint_3",
+                  "stroke": "rgba(231,76,60,1)",
+                  "fill": "rgba(231,76,60,0.1)"
+               },
+               "type": "number"
+            },
+            {
+               "name": "Joint_4",
+               "sourceNames": [
+                  "Joint_4"
+               ],
+               "formula": "",
+               "options": {
+                  "_serie": "Joint_4",
+                  "stroke": "rgba(52,152,219,1)",
+                  "fill": "rgba(52,152,219,0.1)"
+               },
+               "type": "number"
+            },
+            {
+               "name": "Joint_5",
+               "sourceNames": [
+                  "Joint_5"
+               ],
+               "formula": "",
+               "options": {
+                  "_serie": "Joint_5",
+                  "stroke": "rgba(46,204,113,1)",
+                  "fill": "rgba(46,204,113,0.1)"
+               },
+               "type": "number"
+            }
+         ]
+      },
+      {
+         "type": "chart",
+         "gridPos": {
+            "h": 6,
+            "w": 6,
+            "x": 0,
+            "y": 0
+         },
+         "series": [
+            {
+               "name": "Joint_6",
+               "sourceNames": [
+                  "Joint_6"
+               ],
+               "formula": "",
+               "options": {
+                  "_serie": "Joint_6",
+                  "stroke": "rgba(231,76,60,1)",
+                  "fill": "rgba(231,76,60,0.1)"
+               },
+               "type": "number"
+            },
+            {
+               "name": "Joint_7",
+               "sourceNames": [
+                  "Joint_7"
+               ],
+               "formula": "",
+               "options": {
+                  "_serie": "Joint_7",
+                  "stroke": "rgba(52,152,219,1)",
+                  "fill": "rgba(52,152,219,0.1)"
+               },
+               "type": "number"
+            },
+            {
+               "name": "Joint_8",
+               "sourceNames": [
+                  "Joint_8"
+               ],
+               "formula": "",
+               "options": {
+                  "_serie": "Joint_8",
+                  "stroke": "rgba(46,204,113,1)",
+                  "fill": "rgba(46,204,113,0.1)"
+               },
+               "type": "number"
+            }
+         ]
+      },
+      {
+         "type": "chart",
+         "gridPos": {
+            "h": 6,
+            "w": 6,
+            "x": 0,
+            "y": 0
+         },
+         "series": [
+            {
+               "name": "Joint_9",
+               "sourceNames": [
+                  "Joint_9"
+               ],
+               "formula": "",
+               "options": {
+                  "_serie": "Joint_9",
+                  "stroke": "rgba(231,76,60,1)",
+                  "fill": "rgba(231,76,60,0.1)"
+               },
+               "type": "number"
+            },
+            {
+               "name": "Joint_10",
+               "sourceNames": [
+                  "Joint_10"
+               ],
+               "formula": "",
+               "options": {
+                  "_serie": "Joint_10",
+                  "stroke": "rgba(52,152,219,1)",
+                  "fill": "rgba(52,152,219,0.1)"
+               },
+               "type": "number"
+            },
+            {
+               "name": "Joint_11",
+               "sourceNames": [
+                  "Joint_11"
+               ],
+               "formula": "",
+               "options": {
+                  "_serie": "Joint_11",
+                  "stroke": "rgba(46,204,113,1)",
+                  "fill": "rgba(46,204,113,0.1)"
+               },
+               "type": "number"
+            }
+         ]
+      },
+      {
+         "type": "chart",
+         "gridPos": {
+            "h": 6,
+            "w": 6,
+            "x": 0,
+            "y": 0
+         },
+         "series": [
+            {
+               "name": "Joint_12",
+               "sourceNames": [
+                  "Joint_12"
+               ],
+               "formula": "",
+               "options": {
+                  "_serie": "Joint_12",
+                  "stroke": "rgba(231,76,60,1)",
+                  "fill": "rgba(231,76,60,0.1)"
+               },
+               "type": "number"
+            },
+            {
+               "name": "Joint_13",
+               "sourceNames": [
+                  "Joint_13"
+               ],
+               "formula": "",
+               "options": {
+                  "_serie": "Joint_13",
+                  "stroke": "rgba(52,152,219,1)",
+                  "fill": "rgba(52,152,219,0.1)"
+               },
+               "type": "number"
+            },
+            {
+               "name": "Joint_14",
+               "sourceNames": [
+                  "Joint_14"
+               ],
+               "formula": "",
+               "options": {
+                  "_serie": "Joint_14",
+                  "stroke": "rgba(46,204,113,1)",
+                  "fill": "rgba(46,204,113,0.1)"
+               },
+               "type": "number"
+            },
+            {
+               "name": "Joint_15",
+               "sourceNames": [
+                  "Joint_15"
+               ],
+               "formula": "",
+               "options": {
+                  "_serie": "Joint_15",
+                  "stroke": "rgba(155,89,182,1)",
+                  "fill": "rgba(155,89,182,0.1)"
+               },
+               "type": "number"
+            }
+         ]
+      }
+   ],
+   "viewDuration": 15
+}
