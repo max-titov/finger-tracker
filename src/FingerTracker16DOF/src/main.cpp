@@ -4,18 +4,10 @@
 #include <esp_now.h>
 #include <WiFi.h>
 
-#include <ESPNowW.h>
+//#include <ESPNowW.h>
+#include <HapticGlove_ESPNOW.h>
 
 uint8_t receiver_mac[] = {0x3C, 0x84, 0x27, 0xE1, 0xC2, 0x30};//{0x3C, 0x84, 0x27, 0x14, 0x7B, 0xB0};
-
-typedef struct position_packet {
-  // remove when not monitoring success rate:
-  int messages_rec;
-  // end remove
-  uint8_t finger_pos[16];
-  uint8_t wrist_pos[3];
-  uint8_t arm_pos[3];
-} position_packet;
 
 //define multiplexer input pins
 #define S0 D3
@@ -30,11 +22,6 @@ ResponsiveAnalogRead analog(A1, true);
 int rawVals[16];
 int angles[16];
 String dataOut = "";
-position_packet glove_outData;
-
-int glove_messages_send_attempt;
-int glove_messages_send_success;
-int glove_messages_rcv;
 
 double polyVals[16][3] = {
   {-0.000050156739812,0.308087774294671,-325.54858934169279}, //pinkie 0
@@ -113,38 +100,23 @@ void measureAngles(){
   }
 }
 
-void espnow_setup(){
-  Serial.println("ESPNow sender Demo");
-
-  WiFi.mode(WIFI_MODE_STA);
-
-  WiFi.disconnect();
-  ESPNow.init();
-  ESPNow.add_peer(receiver_mac);
-}
-
-void glove_sendData(int fpos[]){
-  // Set values to send
+void sendData(int finger_pos[]){
+  uint8_t fpos[16];
+  uint8_t wpos[3];
+  uint8_t apos[3];
   for(int j=0; j<16; j++){
-    glove_outData.finger_pos[j] = (uint8_t)fpos[j];
+    fpos[j] = (uint8_t)finger_pos[j];
   }
   for(int j=0; j<3; j++){
-    glove_outData.wrist_pos[j] = 0;
-    glove_outData.arm_pos[j] = 0;
+    wpos[j] = random(1, 255);
+    apos[j] = random(1, 255);
   }
-  glove_outData.messages_rec = glove_messages_rcv;
 
-  // Send struct message via ESP-NOW
-  //esp_err_t result = esp_now_send(receiver_mac, (uint8_t *)&glove_outData, sizeof(glove_outData));
-  ESPNow.send_message(receiver_mac, (uint8_t *)&glove_outData, sizeof(glove_outData));
+  //position_packet.messages_rec = glove_messages_rcv;
+
+  glove_sendData(fpos, wpos, apos);
 
   glove_messages_send_attempt += 1;
-
-  // if (result == ESP_OK) {
-  //   // Serial.println("Sent with success");
-  // } else {
-  //   Serial.println("Error sending the data");
-  // }
 }
 
 void setup() {
@@ -163,7 +135,7 @@ void setup() {
 
   digitalWrite(D2, LOW);
 
-  espnow_setup();
+  glove_ESPNOWsetup(2);
 }
 
 void loop() {
@@ -174,11 +146,10 @@ void loop() {
   printAngles();
   // printDataOut();
 
-  glove_sendData(angles);
+  sendData(angles);
 
-  delay(50);  // delay in between reads for clear read from serial
+  delay(1000/DATA_RATE);
 
 }
-
 
 
