@@ -1,0 +1,31 @@
+.pio/build/seeed_xiao_esp32c3/lib3b3/FastLED/fx/video/frame_interpolator.cpp.o: \
+ .pio/libdeps/seeed_xiao_esp32c3/FastLED/src/fx/video/frame_interpolator.cpp \
+ .pio/libdeps/seeed_xiao_esp32c3/FastLED/src/fx/video/frame_interpolator.h \
+ .pio/libdeps/seeed_xiao_esp32c3/FastLED/src/fx/detail/data_stream.h \
+ .pio/libdeps/seeed_xiao_esp32c3/FastLED/src/namespace.h \
+ .pio/libdeps/seeed_xiao_esp32c3/FastLED/src/crgb.h \
+ .pio/libdeps/seeed_xiao_esp32c3/FastLED/src/chsv.h \
+ .pio/libdeps/seeed_xiao_esp32c3/FastLED/src/color.h \
+ .pio/libdeps/seeed_xiao_esp32c3/FastLED/src/lib8tion/types.h \
+ .pio/libdeps/seeed_xiao_esp32c3/FastLED/src/force_inline.h \
+ .pio/libdeps/seeed_xiao_esp32c3/FastLED/src/template_magic.h \
+ .pio/libdeps/seeed_xiao_esp32c3/FastLED/src/ref.h \
+ .pio/libdeps/seeed_xiao_esp32c3/FastLED/src/scoped_ptr.h \
+ .pio/libdeps/seeed_xiao_esp32c3/FastLED/src/fx/storage/filebuffer.h \
+ .pio/libdeps/seeed_xiao_esp32c3/FastLED/src/file_system.h \
+ .pio/libdeps/seeed_xiao_esp32c3/FastLED/src/fx/video.h \
+ .pio/libdeps/seeed_xiao_esp32c3/FastLED/src/fx/fx2d.h \
+ .pio/libdeps/seeed_xiao_esp32c3/FastLED/src/xymap.h \
+ .pio/libdeps/seeed_xiao_esp32c3/FastLED/src/xmap.h \
+ .pio/libdeps/seeed_xiao_esp32c3/FastLED/src/lut.h \
+ .pio/libdeps/seeed_xiao_esp32c3/FastLED/src/allocator.h \
+ .pio/libdeps/seeed_xiao_esp32c3/FastLED/src/fx/fx.h \
+ .pio/libdeps/seeed_xiao_esp32c3/FastLED/src/fx/detail/draw_context.h \
+ .pio/libdeps/seeed_xiao_esp32c3/FastLED/src/fx/detail/transition.h \
+ .pio/libdeps/seeed_xiao_esp32c3/FastLED/src/fx/time.h \
+ .pio/libdeps/seeed_xiao_esp32c3/FastLED/src/callback.h \
+ .pio/libdeps/seeed_xiao_esp32c3/FastLED/src/fx/storage/bytestream.h \
+ .pio/libdeps/seeed_xiao_esp32c3/FastLED/src/fx/frame.h \
+ .pio/libdeps/seeed_xiao_esp32c3/FastLED/src/fx/detail/circular_buffer.h \
+ .pio/libdeps/seeed_xiao_esp32c3/FastLED/src/math_macros.h \
+ .pio/libdeps/seeed_xiao_esp32c3/FastLED/src/fx/video/frame_tracker.h

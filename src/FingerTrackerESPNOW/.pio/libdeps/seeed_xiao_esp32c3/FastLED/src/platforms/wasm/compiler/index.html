@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>FastLED.js</title>
+
+    <link rel="stylesheet" href="index.css">
+    <!-- Include Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1>FastLED.js</h1>
+    <div id="main-container">
+        <div id="top-row">
+            <div id="canvas-container">
+                <canvas id="myCanvas" width="16" height="16"></canvas>
+            </div>
+            <div id="ui-controls"></div>
+        </div>
+        <div id="container"></div>
+        <pre id="output"></pre>
+    </div>
+
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://threejs.org/build/three.module.js",
+                "three/addons/": "https://threejs.org/examples/jsm/"
+            }
+        }
+    </script>
+
+
+
+</body>
+
+<script type="module">
+    import * as THREE from 'three';
+
+    import Stats from 'three/addons/libs/stats.module.js';
+    import { GUI } from 'three/addons/libs/lil-gui.module.min.js';
+
+    import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+    import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+    import { EffectComposer } from 'three/addons/postprocessing/EffectComposer.js';
+    import { RenderPass } from 'three/addons/postprocessing/RenderPass.js';
+    import { UnrealBloomPass } from 'three/addons/postprocessing/UnrealBloomPass.js';
+    import { OutputPass } from 'three/addons/postprocessing/OutputPass.js';
+
+    window.threeJsModules = { THREE, Stats, GUI, OrbitControls, GLTFLoader, EffectComposer, RenderPass, UnrealBloomPass, OutputPass };
+</script>
+
+
+<!-- Include the FastLED script -->
+<script src="fastled.js"></script>
+<script src="index.js"></script>
+<script type="module">
+
+    async function loadThreeJs() {
+        console.log('Using ThreeJS modules:', window.threeJsModules);
+        return {
+            containerId: "container",
+            modules: window.threeJsModules,
+        };
+    }
+
+    // load fastled when the window is loaded.
+    async function loadFastLed() {
+        // Load the FastLED module.
+        const threeJs = await loadThreeJs();
+        const options = {
+            canvasId: "myCanvas",
+            uiControlsId: "ui-controls",
+            printId: "output",
+            frameRate: 60,
+            fastled: fastled,
+            threeJs: threeJs,
+        }
+        await globalThis.loadFastLED(options);
+    }
+
+    // Wait for fonts to load before showing content
+    if (document.fonts && document.fonts.ready) {
+        document.fonts.ready.then(function () {
+            document.body.style.opacity = 1;
+        });
+    } else {
+        // Fallback for browsers that do not support document.fonts
+        window.onload = function () {
+            document.body.style.opacity = 1;
+        };
+    }
+
+    let loaded = false;
+    let loadFastLedOnce = () => {
+        if (loaded) return;
+        loadFastLed();
+        loaded = true;
+    }
+
+    window.addEventListener('load', loadFastLedOnce);
+    setTimeout(loadFastLedOnce, 100);
+</script>
+
+
+</html>
