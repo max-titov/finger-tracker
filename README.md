@@ -7,6 +7,12 @@ Hardware that attaches to the back of your hand and fingertips that tracks 16 de
   <img src="./media/hand_stand.jpeg" width="300" /> 
 </p>
 
+
+
+https://github.com/user-attachments/assets/3ccb0007-c99d-40c1-8628-71b2f0f8c4fa
+
+
+
 ## Description
 
 The glove uses rotating neodymium magnets and hall effect sensors at each joint to measure rotation. The thumb has 4 sensors and the fingers have 3 each. Each sensor is wired up to a multiplexer and powered with a common GND/VCC strip. I used a XIAO ESP32C3 as the microcontroller for its small form factor. This project builds upon Nepyope's glove shown here: [Youtube](https://www.youtube.com/watch?v=iPtgvh6fNdQ).
